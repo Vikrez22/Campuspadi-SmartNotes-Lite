@@ -1,13 +1,13 @@
 {
-  "team_id": "your-team-id",
+  "team_id": "1059796",
   "domain": "corporate_enterprise",
   "language_scope": ["en"],
   "african_alpha_claim": false,
   "budget_laptop_claim": true,
   "submitter": {
     "name": "Victor Jonah",
-    "email": "your-email@domain.com",
-    "github_handle": "your-github"
+    "email": "victorujonah@gmail.com",
+    "github_handle": "vikrez2021"
   },
   "cross_disciplinary_pairing": {
     "discipline": "education",
@@ -17,11 +17,11 @@
   "test_prompts": [
     {
       "prompt_id": "tp_001",
-      "prompt": "Replace with a real Campuspadi SmartNotes Lite test prompt for the summary mode, using a representative student note."
+      "prompt": "Summarize the following student note and generate 3 quiz questions: Computer science covers the theory, design, and application of computing systems, focusing on hardware, software, and data processing. Core areas include data representation (binary, hex), algorithms, operating systems, networking, and programming fundamentals. It utilizes an IPO model - Input, Process, Output - to convert data into information. Hardware refers to physical components (CPU, RAM, storage). Software refers to instructions for hardware (System OS vs Application). The CPU contains the control unit, ALU, and registers to execute instructions. Data Structure refers to ways of organizing data (e.g., Arrays). Algorithms are step-by-step procedures for calculations. Data Representation: Computers use binary (0s and 1s) to store text, sound, and images. Hexadecimal is often used for easier representation. Networking: The Internet is a global network of connected computers using web protocols and browsers. Operating Systems (OS): Manages resources (Windows, Linux, iOS). Security: Measures to protect data, including encryption."
     },
     {
       "prompt_id": "tp_002",
-      "prompt": "Replace with a real Campuspadi SmartNotes Lite test prompt for the quiz mode, using a representative student note."
+      "prompt": "Summarize the following student note and generate 3 quiz questions: The Nigerian economy is classified as a mixed economy, combining elements of both private enterprise and government intervention. Nigeria is the largest economy in Africa by GDP, driven primarily by the oil and gas sector which accounts for over 80% of government revenue and foreign exchange earnings. However, the sector employs less than 5% of the workforce. Agriculture remains the largest employer, engaging about 70% of the working population, producing crops like cocoa, groundnuts, palm oil, and cassava. The manufacturing sector is underdeveloped due to poor infrastructure, inconsistent power supply, and limited access to finance. Nigeria operates a federal fiscal system where revenue is shared between federal, state, and local governments through the Federation Account. The naira is the official currency, managed by the Central Bank of Nigeria (CBN). Inflation has been a persistent challenge, often driven by fuel subsidy removal, exchange rate depreciation, and food price increases. The government has attempted various economic reforms including the Structural Adjustment Programme (SAP) in the 1980s, deregulation of the downstream oil sector, and recent unification of exchange rates. Unemployment and underemployment remain high, particularly among youth, contributing to social unrest and insecurity."
     }
   ],
   "model": {
