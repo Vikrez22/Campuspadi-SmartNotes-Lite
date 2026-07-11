@@ -2,6 +2,7 @@
 model/*.gguf
 model/*.bin
 model/*.safetensors
+!model/.gitkeep
 
 # macOS
 .DS_Store
