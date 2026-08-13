@@ -2,22 +2,22 @@
 
 **ADTC 2026 Submission — Corporate/Enterprise Track**
 
-> Offline AI that turns a student's typed study note into a one page summary and quiz — no internet, no cloud, no data plan required. Built from [Campuspadi](https://campuspadi.com), a live edtech platform serving Nigerian university students.
+> Offline AI that turns a student's typed study note into a faithful summary and quiz — no internet, no cloud, no data plan required. Built from [Campuspadi](https://campuspadi.com), a live edtech platform serving Nigerian university students.
 
 ---
 
 ## The Problem
 
-Nigerian university students face a real access barrier: the AI-powered study tools that could help them most — summarization, quiz generation, concept breakdown — require stable internet and API subscriptions they often can't afford or access. A student in a lecture hall with 200MB of data left shouldn't have to choose between using it for study tools or saving it for something else.
+Nigerian university students face a real access barrier: the AI-powered study tools that could help them most — summarization, quiz generation, concept breakdown — require stable internet and API subscriptions they often can't afford or access. A student in a ESUT lecture hall with 200MB of data left shouldn't have to choose between using it for study tools or saving it for something else.
 
 ## The Solution
 
 Campuspadi SmartNotes Lite runs a quantized 3B language model entirely on-device — no cloud calls at inference time — to generate:
 
-- **Summaries** — 3–5 sentence condensations of the student's own note
+- **Summaries** — 3–5 sentence faithful condensations of the student's own note
 - **Quizzes** — 3 multiple-choice questions grounded exclusively in the note's content
 
-This is a scoped, offline reimplementation of the Smart Notes feature already live in Campuspadi, validated against real student notes.
+This is a scoped, offline reimplementation of the Smart Notes feature already live in Campuspadi, validated against real student notes from ESUT (Enugu State University of Science and Technology).
 
 ---
 
@@ -88,6 +88,10 @@ python src/cli.py --note sample_notes/computing_systems.txt --json
 ├── metadata.json           # ADTC submission schema
 ├── download_model.sh       # Idempotent model downloader
 ├── requirements.txt        # Python dependencies (requests only)
+├── AGENTS.md               # Agentic AI briefing file
+├── SKILLS.md               # Recurring task playbooks
+├── LESSONS.md              # Running log of fixes and learnings
+└── VERIFIER.md             # Definition of done checklist
 ```
 
 ---
@@ -107,7 +111,16 @@ CPU-only inference with OpenBLAS acceleration, no CUDA dependency, native GGUF s
 
 ## Benchmarks
 
-*Full benchmark results from the ADTC Standard Laptop profile will be added before Gate 1 submission. Raw data in `bench/results/`.*
+*Measured on Intel Core i5-6300U, 6.8 GB RAM, Ubuntu 22.04 LTS, CPU-only. Raw data in `bench/results/`.*
+
+| Metric | Value |
+|---|---|
+| Generation speed | 5.86 tokens/sec |
+| Peak RAM (RSS) | 3,436 MB (3.4 GB) |
+| RAM headroom | 3.6 GB under 7 GB ceiling |
+| Thermal throttling | None detected |
+| Efficiency score (Seff) | 50.9 / 100 |
+| params_match | ✅ Verified |
 
 ---
 
