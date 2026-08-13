@@ -12,6 +12,5 @@ __pycache__/
 *.pyc
 .venv/
 
-# Local profiler output
-submission.json
-audit.json
+# Documentation
+LESSONS.md
